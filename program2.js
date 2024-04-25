@@ -30,7 +30,13 @@ function smallestMissingPositiveInteger(nums) {
 
 // Example usage:
 let arr = [3, 4, -1, 1];
+let arr2 = 
+let arr3 = 
 console.log(smallestMissingPositiveInteger(arr));
+console.log(smallestMissingPositiveInteger(arr));
+console.log(smallestMissingPositiveInteger(arr));
+
+
 
 
 
