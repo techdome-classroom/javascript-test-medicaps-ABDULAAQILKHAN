@@ -6,12 +6,12 @@ function longestSubstring(text) {
         let maxLength = 0;
         let start = 0;
     
-        for (let end = 0; end < text.length; end++) {
-            if (text[end] in charIndexMap && charIndexMap[text[end]] >= start) {
-                start = charIndexMap[text[end]] + 1;
+        for (let i = 0; i < text.length; i++) {
+            if (text[i] in charIndexMap && charIndexMap[text[i]] >= start) {
+                start = charIndexMap[text[i]] + 1;
             }
-            charIndexMap[text[end]] = end;
-            maxLength = Math.max(maxLength, end - start + 1);
+            charIndexMap[text[i]] = i;
+            maxLength = Math.max(maxLength, i - start + 1);
         }
     
         return maxLength;
