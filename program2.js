@@ -1,6 +1,6 @@
 function smallestMissingPositiveInteger(nums) {
 
-  // Implement the function smallest_missing_positive_integer
+  // Implement the function smallestMissingPositiveInteger
     let n = arr.length;
     
     // Step 1: Transform the array such that all non-positive integers are replaced with 0
@@ -29,9 +29,9 @@ function smallestMissingPositiveInteger(nums) {
 }
 
 // Example usage:
-console.log(smallest_missing_positive_integer([3, 4, -1, 1]));  // Output: 2
-console.log(smallest_missing_positive_integer([1, 2, 0]));      // Output: 3
-console.log(smallest_missing_positive_integer([-1, -3, 4, 2])); // Output: 1
+console.log(smallestMissingPositiveInteger([3, 4, -1, 1]));  // Output: 2
+console.log(smallestMissingPositiveInteger([1, 2, 0]));      // Output: 3
+console.log(smallestMissingPositiveInteger([-1, -3, 4, 2])); // Output: 1
 
 
 module.exports = smallestMissingPositiveInteger;
