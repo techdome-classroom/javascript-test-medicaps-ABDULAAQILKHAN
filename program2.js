@@ -25,7 +25,7 @@ function smallestMissingPositiveInteger(nums) {
         }
     }
 
-    return n + 1;
+    return numLen + 1;
 }
 
 // Example usage:
