@@ -1,6 +1,6 @@
-function longestSubstring(s) {
+function longestSubstring(text) {
     // Implementation of longestSubstring function
-        if (s.length === 0) return 0;
+        if (text.length === 0) return 0;
     
         let charIndexMap = {};
         let maxLength = 0;
