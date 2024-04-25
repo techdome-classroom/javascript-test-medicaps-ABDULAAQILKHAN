@@ -1,7 +1,6 @@
 function smallestMissingPositiveInteger(nums) {
 
   // Implement the function smallest_missing_positive_integer
-  function smallest_missing_positive_integer(arr) {
     let n = arr.length;
     
     // Step 1: Transform the array such that all non-positive integers are replaced with 0
