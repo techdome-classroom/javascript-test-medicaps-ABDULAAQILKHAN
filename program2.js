@@ -38,4 +38,4 @@ console.log(smallestMissingPositiveInteger(arr3));
 
 
 
-module.exports = {smallestMissingPositiveInteger;
+module.exports = smallestMissingPositiveInteger;
