@@ -8,7 +8,7 @@ function longestSubstring(text) {
     
         for (let end = 0; end < text.length; end++) {
             if (text[end] in charIndexMap && charIndexMap[text[end]] >= start) {
-                start = charIndexMap[s[end]] + 1;
+                start = charIndexMap[text[end]] + 1;
             }
             charIndexMap[s[end]] = end;
             maxLength = Math.max(maxLength, end - start + 1);
