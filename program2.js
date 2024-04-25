@@ -4,7 +4,7 @@ function smallestMissingPositiveInteger(nums) {
     let numLen = nums.length;
     
     // Step 1: Transform the numsay such that all non-positive integers are replaced with 0
-    for (let i = 0; i < n; i++) {
+    for (let i = 0; i < numLen; i++) {
         if (nums[i] <= 0) {
             nums[i] = 0;
         }
