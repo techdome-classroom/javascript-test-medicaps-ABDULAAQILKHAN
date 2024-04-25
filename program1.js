@@ -21,7 +21,7 @@ function longestSubstring(text) {
         return maxLen;
     }
     
-    let inputStr = "abcdabcdbb";
+    let inputStr = "abcdabcdabcd";
     console.log(longestSubstring(inputStr));
 
 
