@@ -29,8 +29,8 @@ function smallestMissingPositiveInteger(nums) {
 }
 
 // Example usage:
-let arr = 
-console.log(smallestMissingPositiveInteger([3, 4, -1, 1]));
+let arr = [3, 4, -1, 1];
+console.log(smallestMissingPositiveInteger(arr));
 
 
 
