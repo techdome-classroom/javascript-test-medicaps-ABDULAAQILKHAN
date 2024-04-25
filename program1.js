@@ -10,7 +10,7 @@ function longestSubstring(text) {
             if (text[end] in charIndexMap && charIndexMap[text[end]] >= start) {
                 start = charIndexMap[text[end]] + 1;
             }
-            charIndexMap[s[end]] = end;
+            charIndexMap[text[end]] = end;
             maxLength = Math.max(maxLength, end - start + 1);
         }
     
