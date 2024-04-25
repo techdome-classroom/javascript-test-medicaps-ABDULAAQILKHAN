@@ -11,7 +11,7 @@ function longestSubstring(text) {
         for (let i = 0; i < text.length; i++) {
 
             if (text[i] in allIndexObj && allIndexObj[text[i]] >= start) {
-                start = allIndexObj[text[i]] + 1;
+                start = allIndexObj[text[i]] + 1
             }
             allIndexObj[text[i]] = i;
             maxLen = Math.max(maxLen, i - start + 1);
