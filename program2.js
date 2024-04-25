@@ -29,7 +29,7 @@ function smallestMissingPositiveInteger(nums) {
 }
 
 // Example usage:
-console.log(smallestMissingPositiveInteger([3, 4, -1, 1]));  // Output: 2
+console.log(smallestMissingPositiveInteger([3, 4, -1, 1]));
 
 
 
