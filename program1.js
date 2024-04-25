@@ -1,6 +1,7 @@
 function longestSubstring(text) {
     // Implementation of longestSubstring function
-        if (text.length === 0) return 0;
+        if (text.length === 0)
+         return 0;
     
         let allIndexObj = {};
         let maxLength = 0;
@@ -13,7 +14,7 @@ function longestSubstring(text) {
             }
             allIndexObj[text[i]] = i;
             maxLength = Math.max(maxLength, i - start + 1);
-            
+
         }
     
         return maxLength;
