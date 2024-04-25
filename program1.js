@@ -5,7 +5,7 @@ function longestSubstring(text) {
         }
     
         let allIndexObj = {};
-        let maxLength = 0;
+        let maxLen = 0;
         let start = 0;
     
         for (let i = 0; i < text.length; i++) {
@@ -14,11 +14,11 @@ function longestSubstring(text) {
                 start = allIndexObj[text[i]] + 1;
             }
             allIndexObj[text[i]] = i;
-            maxLength = Math.max(maxLength, i - start + 1);
+            maxLen = Math.max(maxLen, i - start + 1);
 
         }
     
-        return maxLength;
+        return maxLen;
     }
     
     let inputStr = "abcdabcdbb";
