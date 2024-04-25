@@ -1,26 +1,26 @@
 function smallestMissingPositiveInteger(nums) {
 
   // Implement the function smallestMissingPositiveInteger
-    let n = arr.length;
+    let n = nums.length;
     
-    // Step 1: Transform the array such that all non-positive integers are replaced with 0
+    // Step 1: Transform the numsay such that all non-positive integers are replaced with 0
     for (let i = 0; i < n; i++) {
-        if (arr[i] <= 0) {
-            arr[i] = 0;
+        if (nums[i] <= 0) {
+            nums[i] = 0;
         }
     }
 
-    // Step 2: Mark elements as visited by using the array indices
+    // Step 2: Mark elements as visited by using the numsay indices
     for (let i = 0; i < n; i++) {
-        let index = Math.abs(arr[i]) - 1;
-        if (index < n && arr[index] > 0) {
-            arr[index] = -arr[index];
+        let index = Math.abs(nums[i]) - 1;
+        if (index < n && nums[index] > 0) {
+            nums[index] = -nums[index];
         }
     }
 
     // Step 3: Find the smallest missing positive integer
     for (let i = 0; i < n; i++) {
-        if (arr[i] >= 0) {
+        if (nums[i] >= 0) {
             return i + 1;
         }
     }
