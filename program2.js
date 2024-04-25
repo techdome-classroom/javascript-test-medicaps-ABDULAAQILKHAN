@@ -10,7 +10,6 @@ function smallestMissingPositiveInteger(nums) {
         }
     }
 
-    // Step 2: Mark elements as visited by using the numsay indices
     for (let i = 0; i < numLen; i++) {
         let index = Math.abs(nums[i]) - 1;
         if (index < numLen && nums[index] > 0) {
