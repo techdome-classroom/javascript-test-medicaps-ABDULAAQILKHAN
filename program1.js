@@ -20,8 +20,7 @@ function longestSubstring(s) {
     // Example usage
     let inputStr = "abcabcbb";
     console.log(lengthOfLongestSubstring(inputStr));  // Output: 3
-    
-}
+
 
 module.exports = { longestSubstring };
 
