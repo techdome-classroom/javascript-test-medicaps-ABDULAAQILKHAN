@@ -34,6 +34,4 @@ console.log(smallest_missing_positive_integer([1, 2, 0]));      // Output: 3
 console.log(smallest_missing_positive_integer([-1, -3, 4, 2])); // Output: 1
 
 
-}
-
 module.exports = smallestMissingPositiveInteger;
